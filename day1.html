@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sakha Reset — Free Day 1</title>
+  <meta name="description" content="Try Day 1 of the Sakha Reset for free. Calm your mind in a few minutes with a guided meditation." />
+  <style>
+    :root {
+      --bg: #f8f5ef;
+      --card: rgba(255,255,255,0.78);
+      --text: #2c241a;
+      --muted: #6f6252;
+      --gold: #b98a3d;
+      --gold-dark: #8a6428;
+      --line: rgba(185, 138, 61, 0.18);
+      --shadow: 0 20px 60px rgba(84, 58, 22, 0.12);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      background:
+        radial-gradient(circle at top, rgba(255, 221, 156, 0.26), transparent 32%),
+        linear-gradient(180deg, #fffaf1 0%, #f8f5ef 50%, #f2eee7 100%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .wrapper {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 32px 18px;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 860px;
+      background: var(--card);
+      backdrop-filter: blur(10px);
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .hero {
+      padding: 56px 28px 34px;
+      text-align: center;
+      background: linear-gradient(180deg, rgba(255,255,255,0.9) 0%, rgba(255,248,236,0.72) 100%);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .brand {
+      display: inline-block;
+      font-size: 0.9rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold-dark);
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2rem, 4vw, 3.5rem);
+      line-height: 1.12;
+      font-weight: 700;
+    }
+
+    .sub {
+      max-width: 640px;
+      margin: 18px auto 0;
+      font-size: 1.08rem;
+      color: var(--muted);
+    }
+
+    .body {
+      padding: 34px 28px 42px;
+    }
+
+    .intro {
+      max-width: 680px;
+      margin: 0 auto 28px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 1.02rem;
+    }
+
+    .audio-card {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 24px;
+      background: rgba(255,255,255,0.86);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      box-shadow: 0 12px 30px rgba(84, 58, 22, 0.08);
+    }
+
+    .audio-title {
+      margin: 0 0 8px;
+      font-size: 1.5rem;
+      text-align: center;
+    }
+
+    .audio-note {
+      margin: 0 0 18px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
+
+    audio {
+      width: 100%;
+      margin: 10px 0 6px;
+      border-radius: 14px;
+    }
+
+    .tips {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin: 22px 0 8px;
+    }
+
+    .tip {
+      padding: 14px;
+      border-radius: 16px;
+      background: #fffaf3;
+      border: 1px solid var(--line);
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .upgrade {
+      max-width: 700px;
+      margin: 30px auto 0;
+      text-align: center;
+      padding: 26px 22px 10px;
+    }
+
+    .upgrade h2 {
+      margin: 0;
+      font-size: 1.75rem;
+    }
+
+    .upgrade p {
+      margin: 12px auto 20px;
+      max-width: 600px;
+      color: var(--muted);
+    }
+
+    .cta-row {
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 24px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 700;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+    }
+
+    .btn-primary {
+      background: linear-gradient(180deg, #d9aa58 0%, #b98a3d 100%);
+      color: #fffaf1;
+      box-shadow: 0 12px 26px rgba(185, 138, 61, 0.28);
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: var(--gold-dark);
+      border: 1px solid rgba(185, 138, 61, 0.35);
+    }
+
+    .btn:hover {
+      transform: translateY(-1px);
+    }
+
+    .foot {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.92rem;
+      margin-top: 26px;
+    }
+
+    @media (max-width: 700px) {
+      .hero { padding: 44px 20px 26px; }
+      .body { padding: 24px 18px 34px; }
+      .audio-card { padding: 20px 16px; }
+      .tips { grid-template-columns: 1fr; }
+      .sub { font-size: 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <main class="card">
+      <section class="hero">
+        <div class="brand">Sakha Reset — Free Day 1</div>
+        <h1>Calm Your Mind.<br />Begin Your Reset Today.</h1>
+        <p class="sub">
+          This is your free Day 1 guided meditation from the Sakha Reset — a simple first step to slow down, breathe deeply, and feel lighter.
+        </p>
+      </section>
+
+      <section class="body">
+        <p class="intro">
+          Sit comfortably. Use headphones if possible. For the next few minutes, let yourself pause fully. No pressure. No effort. Just press play and begin.
+        </p>
+
+        <div class="audio-card">
+          <h2 class="audio-title">Day 1 — Calm the Mind</h2>
+          <p class="audio-note">Replace the audio file path below with your uploaded file link.</p>
+
+          <audio controls preload="metadata">
+            <source src="/audio/day1-calm-the-mind.mp3" type="audio/mpeg" />
+            Your browser does not support the audio element.
+          </audio>
+
+          <div class="tips">
+            <div class="tip">Find a quiet place</div>
+            <div class="tip">Sit with a relaxed spine</div>
+            <div class="tip">Let your breath soften naturally</div>
+          </div>
+        </div>
+
+        <section class="upgrade">
+          <h2>If this helped you feel calmer, continue the journey.</h2>
+          <p>
+            The full Sakha Reset is designed to help you reduce overthinking, improve focus, and build a calmer inner state in just 20 minutes a day.
+          </p>
+
+          <div class="cta-row">
+            <a class="btn btn-primary" href="/">Unlock Full 7-Day Reset</a>
+            <a class="btn btn-secondary" href="mailto:sakhathedivinefrind@gmail.com">Need Help?</a>
+          </div>
+
+          <p class="foot">
+            Trusted by seekers choosing a calmer, clearer, more centered life.
+          </p>
+        </section>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
